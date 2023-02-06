@@ -10,6 +10,7 @@ body {
 /* Style the p text  */
 p{
   line-height: 1.4;
+  text-indent: 15px;
 }
 /* Header/logo Title */
 .header {
@@ -85,4 +86,13 @@ p{
   padding: 20px;
   text-align: center;
   background: #ddd;
+}
+/* Responsive layout - when the screen is less than 700px wide,
+ make the side Layout disappears */
+ @media screen and (max-width: 700px) {
+   .side {   
+    display: none;
+    
+    min-height: 200px;
+  }
 }
