@@ -52,6 +52,12 @@ body {
 }
 
 /* Main column */
+.mainindex{
+  flex: 100%;
+  min-height: 700px;
+  background-color: white;
+  padding: 20px;
+}
 .main {
   flex: 70%;
   min-height: 700px;
@@ -59,17 +65,16 @@ body {
   padding: 20px;
 }
 .sideelement {
-  padding: 25px;
-  text-align: center;
+  padding:10px;
+  text-align: left;
   background: #505353;
   color: white;
 }
 
 .mainelement {
-  padding: 25px;
-  text-align: center;
-  background: #505353;
-  color: white;
+  padding: 10px;
+  text-align: left;
+  color: black;
 }
 
 /* Footer */
@@ -77,13 +82,4 @@ body {
   padding: 20px;
   text-align: center;
   background: #ddd;
-}
-
-/* Responsive layout - when the screen is less than 700px wide,
- make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 700px) {
-  .row, .main, .side {   
-    flex-direction: column;
-    min-height: 200px;
-  }
 }
